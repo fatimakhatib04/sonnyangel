@@ -40,11 +40,11 @@ Responsive
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page 
-  <img src="readme-images/FireShot Capture 011 - Sonny Angel Benelux - [www.sonnyangel-benelux.com].png" width="375px" alt="home page sonny angel">
+  <img src="readme-images/sonnyangel-home.png" alt="home page sonny angel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Detail pagina Smiski Strap serie 1 
-  <img src="readme-images/FireShot Capture 013 - Sonny Angel Benelux - Smiski Touch Light - [www.sonnyangel-benelux.com].png" width="375px" alt="detail pagina Smiski Strap serie 1 ">
+  <img src="readme-images/sonnyangel-detail.png" alt="detail pagina Smiski Strap serie 1 ">
  
 </details>
 
@@ -56,7 +56,55 @@ Responsive
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+Accessibility findings – Sonny Angel website
+
+tijdens het testen van de Sonny Angel website met de voiceover functie, zijn er mij meerdere dingen opgevalen:
+
+Images:
+
+Bijna alle images hebben geen proper alt attributes.
+
+Screen readers lezen heel veel vakjes als “image” zonder description, wat het onmogelijk maakt voor een gebruiker zonder visuele ondersteuning.
+
+Er zijn dus ook lege alt-attributen aanwezig, waardoor belangrijke visuele informatie niet wordt overgebracht.
+
+Structure & Headings
+
+The HTML structure is niet best voor accessibility.
+
+Headings hebben blijkbaar geen duidelijke hierarchy.
+
+Wanneer je met een screen reader navigeert, the focus springt van de ene naar de andere plek, in plaats van een logische reading order.
+
+Navigation
+
+de navigation links aanwezig en functuneren zoals het hoort, maar door het gebrek aan beschrijvende labels en een duidelijke heading-structuur is het moeilijker om de context van elke pagina te begrijpen.
+
+VoiceOver zegt in de meeste plekken “link, link, link,” zonder context.
+
+Color & Contrast
+
+De site maakt veel gebruik van lichtroze op wit en lichtgrijs op wit.
+
+Deze combinaties voldoen niet aan de richtlijnen voor contrastverhoudingen, vooral bij lopende tekst en sommige details op productpagina’s. Dit kan verwarrend of zelfs onleesbaar zijn voor gebruikers met een verminderd gezichtsvermogen of een kleurenzienstoornis.
+
+Lists & Links
+
+De site maakt wel gebruik van lists voor meerdere items, wat goed werkt. De links zijn over het algemeen duidelijk, maar zonder de juiste context (headings, context of alt-teksten) zijn ze minder bruikbaar voor screenreaders.
+
+Overall impression
+
+De site lijkt heel well-designed en clean.
+
+Maar de toegankelijkheid kan heel veel verbeteringen hebben:
+
+Duidelijker alt text voor images.
+
+Betere heading structure voor een logical reading order.
+
+Hoger contrast, volgens WCAG AA standards.
+
+Betere descriptions voor links en interactieve elementen.
 
 </details>
 
@@ -68,13 +116,13 @@ Responsive
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Frame 1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dynamischdeel1.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dynamischdeel2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 

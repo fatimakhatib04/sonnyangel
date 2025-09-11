@@ -27,5 +27,59 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+body {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+
+header {
+    background-color:#ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F4A5AA;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #F4A5AA;
+	
+}
+
+
+main section:first-of-type {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #F7CDCF;
+}
+
+main section:first-of-type img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 1em;
+}
