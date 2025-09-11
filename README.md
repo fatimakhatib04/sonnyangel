@@ -30,21 +30,21 @@ Responsive
 
 
 
-## Je website
+## [Je website](https://www.sonnyangel-benelux.com/nl/)
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  [Sonny Angel](https://www.sonnyangel-benelux.com/nl/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home page 
+  <img src="readme-images/FireShot Capture 011 - Sonny Angel Benelux - [www.sonnyangel-benelux.com].png" width="375px" alt="home page sonny angel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Detail pagina Smiski Strap serie 1 
+  <img src="readme-images/FireShot Capture 013 - Sonny Angel Benelux - Smiski Touch Light - [www.sonnyangel-benelux.com].png" width="375px" alt="detail pagina Smiski Strap serie 1 ">
  
 </details>
 
