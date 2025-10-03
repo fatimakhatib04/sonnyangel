@@ -136,26 +136,27 @@ Betere descriptions voor links en interactieve elementen.
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Na het analiseren van de website "bandcamp" liep ik heel snel vast en ik dacht dat het handig is om voor iets meer op niveau te gaan en zo heb ik voor Sonny Angel gekozen.
+
+  Het analiseren van hun code ging voor mijn gevoel best wel goed, zo had ik een betere beeld van wat ik alemaal zou kunnen verbeteren, en zo heb ik een begin vooral aan mijn html gedaan.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met de groepje opgesteld
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1           | student 2          | student 3      |
+  | ---                 | ---                | ---            |
+  | Links, in hoevere   | Hamburgur menu     | cards en grids |
+  | de website uit-     | ...                |  ...           |
+  | gewerkt moet zijn   | ...                |  ...           |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Alle links (a) van de eerste pagina naar de tweede pagina laten verwijsen, andersom ook
+  - data invullen en versturen: formuleer
+  - html uittypen > daarna css ( wat ook kan is deels van de html uitzetten en stap voor stap alles stijlen)
+  - Hamburgur menu > JS 
 
 </details>
 
@@ -185,9 +186,9 @@ Betere descriptions voor links en interactieve elementen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Font-size: clamp gebruiken, eventueel generatior gebruiken.
+  - Je zou img-src kunnen gebruiken voor snel een foto op je website
+  - voor mobile first, maak je eigelijk een website voor de. mobile scherm 
 - ...
 
 </details>

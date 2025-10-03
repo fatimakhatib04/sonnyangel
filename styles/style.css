@@ -1,8 +1,12 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -13,11 +17,6 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
 
 
 
@@ -28,58 +27,837 @@
 /****************/
 
 body {
-    background-color: #ffffff;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #ffffff;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* Header */
+/* bron: Flexbox oefening 3 - Flexy header */
+/****************/
 
 
 header {
-    background-color:#ffffff;
-    width: 100%;
-    margin: 0;
-    padding: 1em 0;
+	background-color: #3B1819;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+header img {
+	width: 12em;
+	height: 3.75em;
+	padding: .75em 1.75em .75em 1.75em;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.5em;
+	background-color: #F7CDCF;
+	flex-grow: 1;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	gap: 1px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header nav ul li {
+	min-width: 6em;
+	flex-grow: 1;
+	display: inline-block;
+	position: relative;
 }
 
 header nav a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #F4A5AA;
+	text-decoration: none;
+	color: #3B1819;
+	display: block;
+	line-height: 3.75em;
+	text-align: center;
+}
+
+
+
+
+/******************/
+/* DROPDOWNS */
+/* bron: https://www.youtube.com/watch?v=eKo1NV1qxbc */
+/******************/
+
+
+header nav ul li ul li {
+	display: block;
+}
+
+header nav ul li ul {
+	width: 100%;
+	background-color: #F7CDCF;
+	color: #3B1819;
+	position: absolute;
+	z-index: 999;
+	display: none;
 }
 
 header nav a:hover {
-    text-decoration: underline;
-    color: #F4A5AA;
-	
+	background-color: #3B1819;
+	color: #F7CDCF;
 }
 
+header nav a:focus {
+	background-color: #3B1819;
+	color: #F7CDCF;
+	text-decoration: underline;
+}
+
+header nav ul li:hover ul {
+	display: block;
+}
+
+header nav ul li:focus ul {
+	display: block;
+}
+
+
+
+/* ZOEK FORMULIER */
+
+header form {
+	padding: .75em;
+	flex-grow: 5;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+header form input {
+	width: 0;
+	flex-grow: 1;
+}
+
+input,
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	font: inherit;
+}
+
+header form input {
+	min-width: 12em;
+	max-width: 38em;
+	line-height: 2em;
+	padding: 0 .5em;
+}
+
+header form button {
+	line-height: 2em;
+	padding: .5em;
+	background-color: #F7CDCF;
+	color: #3B1819;
+}
+
+
+header form label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/****************/
+/* MAIN */
+/****************/
+
+main {
+	text-align: center;
+}
+
+main section {
+	padding: 2em 0 2em 0;
+}
 
 main section:first-of-type {
-    text-align: center;
-    padding: 2em 1em;
-    background-color: #F7CDCF;
+	width: 100%;
+	background-color: #F7CDCF;
+	background: linear-gradient(#F7CDCF, #ffffff);
 }
 
-main section:first-of-type img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-bottom: 1em;
+
+
+/* met Chat GPT de exacte filter van de png gevonden */
+
+main section:first-of-type h1 img {
+	filter: brightness(0) saturate(100%) invert(13%) sepia(32%) saturate(965%) hue-rotate(330deg) brightness(95%) contrast(92%);
+	width: 8em;
+	padding: 2em 0 2em 0;
+}
+
+main section:first-of-type p {
+	padding: 1em 1em 1em 1em;
+	margin: 1em 0 1em 0;
+	color: #3B1819;
+	font-size: medium;
+
+	@media (min-width: 540px) {
+		font-size: large;
+		margin: 1em 3em 1em 3em;
+	}
+
+}
+
+
+/* 3D Shop nu button, States oefening 1 - Links, buttons en co:*/
+
+main section:first-of-type>a {
+	display: inline-block;
+	padding: 0.7em 1.5em;
+	background: linear-gradient(to bottom, #FADADD, #F7CDCF);
+	/* licht naar donker verloop */
+	color: #3B1819;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 25px;
+	box-shadow: 0 6px 0 #d7a3a6, 0 6px 8px rgba(0, 0, 0, 0.30);
+	/* 3D schaduw */
+	transition: all 0.3s ease;
+	position: relative;
+	margin: 2em 0 2em 0;
+}
+
+main section:first-of-type>a:hover {
+	background: linear-gradient(to bottom, #f5c1c4, #e6b3b5);
+}
+
+main section:first-of-type>a:active {
+	top: 3px;
+	/* knop lijkt ingedrukt, met Chat GPT de exacte gewenste waarde hiervoor gevonden */
+	box-shadow: 0 3px 0 #d7a3a6, 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* New collection */
+
+main section:first-of-type div {
+	display: grid;
+	grid-template-columns: 1fr;
+	/* mobiel: 1 kolom */
+	gap: 1rem;
+	padding: 1rem;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	@media (min-width: 780px) {
+		grid-template-columns: repeat(3, 1fr);
+
+
+	}
+
+}
+
+
+
+
+main section:first-of-type div a img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	aspect-ratio: 16 / 9;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+main section:first-of-type div a img:hover,
+main section:first-of-type div a img:focus {
+	transform: scale(1.05);
+	/* zoomt een beetje in */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	/* optioneel: schaduw */
+	outline: #3B1819;
+}
+
+
+
+
+
+/* Alle producten*/
+
+
+
+/* Alle producten nav */
+main section:nth-of-type(2) ul:first-of-type {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+	gap: 1em;
+	padding: 2em;
+	justify-content: center;
+
+	@media (min-width: 540px) {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+
+main section:nth-of-type(2) ul:first-of-type li a {
+	text-decoration: none;
+	color: #3B1819;
+	font-size: 1em;
+	transition: all 0.3s ease;
+	text-decoration: underline;
+}
+
+main section:nth-of-type(2) ul:first-of-type li a:hover {
+	text-shadow: 0 0 10px #F7CDCF, 0 0 20px #F7CDCF, 0 0 40px #F7CDCF;
+	outline: #3B1819;
+	text-decoration: underline;
+	transform: scale(1.05);
+}
+
+
+
+
+main section:nth-of-type(2) ul:first-of-type li a:focus {
+	text-shadow: 0 0 10px #F7CDCF, 0 0 20px #F7CDCF, 0 0 40px #F7CDCF;
+	outline: #3B1819;
+	text-decoration: underline;
+	transform: scale(1.05);
+	border: 0.5px solid #3B1819;
+	display: block;
+
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	padding: 1em;
+	justify-content: center;
+	/* center grid binnen de pagina */
+
+	@media (width > 780px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) li {
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 0.5em;
+
+	@media (width > 850px) {
+		padding: 1em;
+	}
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: .5em;
+	transition: 0.3s;
+
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li a {
+	text-decoration: none;
+	color: #3b1819d2;
+	font-size: small;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li a::before {
+	content: '';
+	opacity: 0;
+	position: absolute;
+	inset: 0;
+}
+
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) li h3 {
+	font-size: medium;
+	padding: .5em;
+}
+
+
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) li:hover img,
+main section:nth-of-type(2) ul:nth-of-type(2) li:focus-within img {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	outline: #3B1819;
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) li p {
+	background-color: #fff;
+	position: absolute;
+	right: 8%;
+	bottom: 35%;
+	padding: .5em;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+main section:nth-of-type(3) {
+	background-image: url(/images/home/form.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+main section:nth-of-type(3) div {
+	margin: 5em;
+	background-color: #ffffffd7;
+	padding: 1em;
+}
+
+
+main section:nth-of-type(3) div a {
+	display: block;
+	color: #3B1819;
+	text-decoration: none;
+	padding: .5em;
+	border: 1px solid #3B1819;
+	transition: 0.3s;
+	margin-top: .5em;
+
+}
+
+main section:nth-of-type(3) div a:hover,
+main section:nth-of-type(3) div a:focus {
+	background-color: #F7CDCF;
+	border: 1px solid #f5c1c4;
+}
+
+
+h2 {
+	font-size: medium;
+	color: #3B1819;
+
+	@media (min-width: 540px) {
+		font-size: x-large;
+		margin: .5em 1em 1em .5em;
+	}
+
+}
+
+
+
+
+
+/* main form */
+
+main section:nth-of-type(4) {
+	border: 1px solid #3B1819;
+	padding: 5%;
+	margin: 5%;
+}
+
+main section form {
+	padding: .75em;
+	display: flex;
+	justify-content: center;
+}
+
+main section form label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+
+}
+
+main section form input {
+	padding: 0 .5em;
+	background: #F7CDCF;
+	border: 2px solid #F7CDCF;
+	border-radius: 5px;
+	transition: border 0.3s ease, box-shadow 0.3s ease;
+	flex-grow: 1;
+	max-width: 40em;
+}
+
+
+main section form input:focus {
+	outline: none;
+	border: 2px solid #3B1819;
+	box-shadow: 0 0 6px rgba(59, 24, 25, 0.3);
+}
+
+/* Ongeldig */
+main section form input:invalid {
+	border: 2px solid #f0b6b6;
+	box-shadow: none;
+}
+
+/* Correct */
+main section form input:valid {
+	border: 2px solid #b6d7b6;
+	box-shadow: none;
+}
+
+
+main section form button {
+	line-height: 2em;
+	padding: .5em 1em;
+	background-color: #3B1819;
+	color: #F7CDCF;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+main section form button:hover,
+main section form button:focus {
+	background-color: #5c2729;
+}
+
+
+
+
+
+
+footer section:first-of-type {
+	padding: 1em;
+	text-align: center;
+	background-color: #3B1819;
+	color: #fff;
+	list-style: none;
+	text-decoration: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	justify-content: center;
+	align-items: center;
+	margin-top: 4em;
+}
+
+footer section:first-of-type img {
+	width: 50%;
+}
+
+footer section:first-of-type p {
+	padding: 2em;
+}
+
+footer section:first-of-type ul {
+	list-style: none;
+}
+
+
+footer section:first-of-type ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-decoration: underline;
+
+}
+
+footer section:nth-of-type(2) {
+	background-color: #F7CDCF;
+	display: flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	align-items: center;
+}
+
+footer section:nth-of-type(2) img {
+	width: 30%;
+}
+
+footer section:nth-of-type(2) p {
+	font-size: small;
+}
+
+
+/* voorkom uitrekken */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+/**************/
+/* DETAIL PAGINA */
+/**************/
+
+/* header NIET sticky */
+.detail header {
+	position: static;
+}
+
+/* breadcrumb sticky */
+header+ul[aria-label="Breadcrumb"] {
+	list-style: none;
+	display: flex;
+	gap: 0.5em;
+	padding: 0.75em 1em;
+	background-color: #f7cdcf;
+	font-size: 0.9em;
+	margin: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+
+
+header+ul[aria-label="Breadcrumb"] a {
+	color: #3B1819;
+
+}
+
+header+ul[aria-label="Breadcrumb"] a:hover,
+header+ul[aria-label="Breadcrumb"] a:focus {
+	text-decoration: underline;
+	padding: .5em;
+	border: 1px solid #3B1819;
+}
+
+
+header+ul[aria-label="Breadcrumb"] li+li::before {
+	content: " > ";
+	color: #3B1819;
+	margin: 0 0.25em;
+}
+
+
+
+/* Carousel
+Flexbox oefening 4 - Carousel */
+
+.detail main section:first-of-type {
+	background: none;
+	margin: 2em 0 2em 0;
+
+		@media (width > 980px) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.detail main section:first-of-type div {
+	display: inline;
+}
+
+.detail main section:first-of-type ul {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overscroll-behavior-x: contain;
+	gap: 2em;
+	scrollbar-width: thin;
+}
+
+.detail main section:first-of-type ul li {
+	list-style: none;
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+.detail main section:first-of-type ul::scroll-button(*) {
+  width:3em;
+  aspect-ratio:1;
+  margin:1em 0 0;
+  padding:0;
+  background-color:#FADADD;
+  border:3px solid #F7CDCF;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:1em;
+  position:absolute;
+}
+
+.detail main section:first-of-type ul::scroll-button(right) {
+  content: ' > ' / 'Next';
+  right:clamp(1.5em, 5vw, 2em);
+}
+
+.detail main section:first-of-type ul::scroll-button(left) {
+  content: ' < ' / 'Previous';
+  left:clamp(1.5em, 5vw, 2em);
+}
+  
+.detail main section:first-of-type ul::scroll-button(*):disabled {
+  opacity:.5;
+}
+
+
+
+
+.detail main section:nth-of-type(2) ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	padding: 1em;
+	justify-content: center;
+
+	@media (width > 780px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+
+
+
+.detail main section:nth-of-type(2) ul li {
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 0.5em;
+
+	@media (width > 850px) {
+		padding: 1em;
+	}
+}
+
+.detail main section:nth-of-type(2) ul li img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: .5em;
+	transition: 0.3s;
+
+}
+
+.detail main section:nth-of-type(2) ul li a {
+	text-decoration: none;
+	color: #3b1819d2;
+	font-size: small;
+}
+
+.detail main section:nth-of-type(2) ul li a::before {
+	content: '';
+	opacity: 0;
+	position: absolute;
+	inset: 0;
+}
+
+
+
+
+.detail main section:nth-of-type(2) ul li:hover img,
+.detail main section:nth-of-type(2) ul li:focus-within img {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	outline: #3B1819;
+}
+
+
+.detail main section:nth-of-type(2) ul li p {
+	background-color: #fff;
+	position: absolute;
+	right: 8%;
+	bottom: 35%;
+	padding: .5em;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.detail main section:first-of-type div button {
+	display: inline-block;
+	padding: 0.7em 1.5em;
+	background: linear-gradient(to bottom, #FADADD, #F7CDCF);
+	/* licht naar donker verloop */
+	color: #3B1819;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 25px;
+	box-shadow: 0 6px 0 #d7a3a6, 0 6px 8px rgba(0, 0, 0, 0.30);
+	/* 3D schaduw */
+	transition: all 0.3s ease;
+	position: relative;
+	margin: 2em 0 2em 0;
+}
+
+.detail main section:first-of-type div button:hover {
+	background: linear-gradient(to bottom, #f5c1c4, #e6b3b5);
+}
+
+.detail main section:first-of-type div button:active {
+	top: 3px;
+	/* knop lijkt ingedrukt, met Chat GPT de exacte gewenste waarde hiervoor gevonden */
+	box-shadow: 0 3px 0 #d7a3a6, 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.detail table {
+  width: 90%;
+  border-collapse:collapse;
+  margin: 2em 2em 2em 2em ;
+  font-size: 0.95em;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: left;
+  color: #3B1819;
+}
+
+th, td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #F7CDCF;
+  color: #3B1819;
+  width: 30%;
 }
