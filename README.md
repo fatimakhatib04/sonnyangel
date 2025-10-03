@@ -204,6 +204,12 @@ Betere descriptions voor links en interactieve elementen.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <img src="/readme-images/IMG_2653.HEIC" width="375px" alt="uitomst opdracht 1">
+    <img src="/readme-images/IMG_2654.HEIC" width="375px" alt="uitomst opdracht 1">
+      <img src="/readme-images/IMG_2655.HEIC" width="375px" alt="uitomst opdracht 1">
+        <img src="/readme-images/IMG_2656.HEIC" width="375px" alt="uitomst opdracht 1">
+              <img src="/readme-images/IMG_2657.HEIC" width="375px" alt="uitomst opdracht 1">
+
 
 </details>
 
@@ -254,7 +260,12 @@ Betere descriptions voor links en interactieve elementen.
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Mijn focus bij dit project lag vooral op toegankelijkheid. Bij de echte Sonny Angel website viel het mij op dat veel afbeeldingen geen alt-tekst hebben. Dat maakt het moeilijk voor mensen die een screenreader gebruiken. Daarom heb ik in mijn versie overal alts toegevoegd, zodat de inhoud duidelijk wordt uitgesproken.
+
+Ook vond ik dat de originele site vaak lichte kleuren gebruikt, zoals lichtroze of lichtgrijs op wit. Dat ziet er mooi uit, maar het heeft te weinig contrast en kan lastig leesbaar zijn. In mijn website heb ik daarom heldere contrasten gekozen, zodat tekst en knoppen voor iedereen goed zichtbaar zijn.
+
+Verder heb ik geprobeerd de HTML netjes en logisch op te bouwen, zodat de structuur duidelijk is. Tijdens het proces heb ik ook geleerd hoe ik met kleine keuzes, zoals labels of contrast, de site toegankelijker kan maken. Mijn versie is simpeler, maar daardoor beter bruikbaar.
+
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
@@ -278,8 +289,9 @@ Betere descriptions voor links en interactieve elementen.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. /* DROPDOWNS */
+/* bron: https://www.youtube.com/watch?v=eKo1NV1qxbc */
+  2. <!--https://www.youtube.com/watch?v=k5BJoJ9bRBE confetti tutorial-->
+  3. FED dlo opdrachten
 
 </details>
