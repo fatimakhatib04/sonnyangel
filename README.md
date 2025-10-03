@@ -174,14 +174,6 @@ Betere descriptions voor links en interactieve elementen.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -189,7 +181,6 @@ Betere descriptions voor links en interactieve elementen.
   - Font-size: clamp gebruiken, eventueel generatior gebruiken.
   - Je zou img-src kunnen gebruiken voor snel een foto op je website
   - voor mobile first, maak je eigelijk een website voor de. mobile scherm 
-- ...
 
 </details>
 
@@ -204,13 +195,14 @@ Betere descriptions voor links en interactieve elementen.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  <img src="/readme-images/IMG_2653.HEIC" width="375px" alt="uitomst opdracht 1">
-    <img src="/readme-images/IMG_2654.HEIC" width="375px" alt="uitomst opdracht 1">
-      <img src="/readme-images/IMG_2655.HEIC" width="375px" alt="uitomst opdracht 1">
-        <img src="/readme-images/IMG_2656.HEIC" width="375px" alt="uitomst opdracht 1">
-              <img src="/readme-images/IMG_2657.HEIC" width="375px" alt="uitomst opdracht 1">
+  Met Insa, heb ik de toegankelijkheid test die we ook samen in week een hebben gedaan op mijn versie van de website gedaan en dit zijn de resultaten:
+  <img src="readme-images/IMG_2653.HEIC" width="375px" alt="Toegankelijkheid test">
+  <img src="readme-images/IMG_2654.HEIC" width="375px" alt="Toegankelijkheid test">
+  <img src="readme-images/IMG_2655.HEIC" width="375px" alt="Toegankelijkheid test">
+  <img src="readme-images/IMG_2656.HEIC" width="375px" alt="Toegankelijkheid test">
+  <img src="readme-images/IMG_2657.HEIC" width="375px" alt="Toegankelijkheid test">
 
-
+Ik probeerde in mijn website de meeste "nee" vakjes van de eerste test goed te keuren.
 </details>
 
 
@@ -227,22 +219,14 @@ Betere descriptions voor links en interactieve elementen.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
+omdat ik niet bij voortgang gesprek 3 niet bij kon zijn met mijn team, heb ik met een van de studenten assisenten appart afgesproken, we hebben samen gekeken naar de laatse versie die ik had aan aan de hand daarvan heb ik feedback gekregen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik had geen label en valid/in-valid bij mijn forms
+  - Ipv "@media" te gebruiken bij meerdere elementen te geruiken was het makkelijker op te lossen met grid
+  - Grid van footer bijgewerkt
+  - meerdere  "align-items" door de pagina toegevoegen waar het nodig was
 
 </details>
 
@@ -267,11 +251,13 @@ Ook vond ik dat de originele site vaak lichte kleuren gebruikt, zoals lichtroze 
 Verder heb ik geprobeerd de HTML netjes en logisch op te bouwen, zodat de structuur duidelijk is. Tijdens het proces heb ik ook geleerd hoe ik met kleine keuzes, zoals labels of contrast, de site toegankelijker kan maken. Mijn versie is simpeler, maar daardoor beter bruikbaar.
 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/FireShot Capture 001 - Sonny Angel - [127.0.0.1].png" width="375px" alt="top">
+  <img src="readme-images/FireShot Capture 002 - Sonny Angel - [127.0.0.1].png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Ook heb ik heel veel geleerd, ik vind het toepassen wel nogsteeds supper moeilijk, als ik naar de uitleg luister of de opdrachten maak had ik het gevoel dat ik het wel allemaal begrijp maar toepassen op een blanke pagina was veel moeilijker dan wat ik had verwacht daarom kon ik ook niet alles wat ik wilde uitwerken af.
+wat nog te verbeteren is, is meer tijd in stoppen. Bv door wat meer intractie toe te voegen, de details van de paginas in het algemeen an en de grids in beide paginas.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
